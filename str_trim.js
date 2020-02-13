@@ -38,7 +38,7 @@ function str_trim(str, chr) {
 	return s;
 }
 if (typeof (String.prototype.trim) == "undefined") {
-    String.prototype.trim = function (str, chr) {
-        return str_trim(this, str, chr);
+    String.prototype.trim = function (chr) {
+        return str_trim(this, chr);
     };
 }
