@@ -10,8 +10,8 @@ function str_trim_start(str, chr) {
 	return s;
 }
 if (typeof (String.prototype.trimStart) == "undefined") {
-    String.prototype.trimStart = function (str, chr) {
-        return str_trim_start(this, str, chr);
+    String.prototype.trimStart = function (chr) {
+        return str_trim_start(this, chr);
     };
 }
 
@@ -26,8 +26,8 @@ function str_trim_end(str, chr) {
 	return s;
 }
 if (typeof (String.prototype.trimEnd) == "undefined") {
-    String.prototype.trimEnd = function (str, chr) {
-        return str_trim_end(this, str, chr);
+    String.prototype.trimEnd = function (chr) {
+        return str_trim_end(this, chr);
     };
 }
 
