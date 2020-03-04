@@ -1,6 +1,6 @@
 
 function array_filter_not_null(arr) {
-    return arr.filter(a => a != null);
+    return arr.filter(a => a);
 }
 
 if (Array.prototype.notNull != null) {
