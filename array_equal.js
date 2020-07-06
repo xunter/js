@@ -15,3 +15,13 @@ function arrays_equal(...arrs) {
 
     return true;
 }
+if (!Array.prototype.equals) {
+    Array.prototype.equals = function(...others) {
+        return arraysEqual(this, ...others);
+    }
+}
+if (!Array.equal) {
+    Array.equal = function(...arrays) {
+        return arraysEqual(...arrays);
+    }
+}
